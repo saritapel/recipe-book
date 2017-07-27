@@ -1,0 +1,22 @@
+
+<div class="container">
+    
+    <div class="page-header">
+      <h1>{{greetName}}'s Recipes</h1>
+    </div>
+
+    
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="recipe in recipeArr" >
+        
+        <div class="well recipe-item" ng-click="openDetails($index)">
+            
+            <img ng-src="{{recipe.imageUrl}}" class="img-responsive" alt="Image">
+            <h3>{{recipe.name}}</h3>
+            <p>{{recipe.description}}</p>
+
+        </div>
+        
+    </div>
+    
+    
+</div>
